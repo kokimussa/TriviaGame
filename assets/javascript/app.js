@@ -28,40 +28,39 @@ var question2 = document.quiz.question2.value;
 var question3 = document.quiz.question3.value;
 var correct = 0;
 var incorrect = 0;
-var unaswered = "";
+var unanswered = 0;
+
 if (question1 ==="1987") {
-correct++;
+	correct++;
+} else if (question1 ==="") {
+	unanswered++; 
+} else {
+	incorrect++;
 }
+
 
 if (question2 ==="Frances") {
-correct++;
+	correct++;
+} else if (question2 ==="") {
+	unanswered++; 
+} else {
+	incorrect++;
 }
+
+
 if (question3 ==="Penny") {
-correct++;
-}
-if (question1 !=="1987") {
-incorrect++;
-}
-
-if (question2 !=="Frances") {
-incorrect++;
-}
-if (question3 !=="Penny") {
-incorrect++;
-}
-if (question1 = "") {
-unaswered++;
+	correct++;
+} else if (question3 ==="") {
+	unanswered++; 
+} else {
+	incorrect++;
 }
 
-if (question2 = "") {
-unaswered++;
-}
-if (question3 = "") {
-unaswered++;
-}
+
+
 document.getElementById("after_submit").style.visibility = "visible";
 document.getElementById("number_correct").innerHTML = "Correct Answers: " + correct;
 document.getElementById("number_incorrect").innerHTML = "Incorrect Answers: " + incorrect;
-document.getElementById("number_unaswered").innerHTML = "Unanswered Answers: " + "";
+document.getElementById("number_unanswered").innerHTML = "Unanswered Answers: " + unanswered;
 }
 
