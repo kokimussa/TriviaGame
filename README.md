@@ -4,6 +4,9 @@ A trivia game that allows a player to select from multiple choice questions wher
 
 Web site uses HTML, CSS, Javascript and jQuery
 
+<br>
 
 
-![alt Trivia Game]( https://github.com/kokimussa/TriviaGame/blob/master/Trivia-game.png)
+![alt Trivia Game](https://github.com/kokimussa/TriviaGame/blob/master/Triviagame.png)
+
+
